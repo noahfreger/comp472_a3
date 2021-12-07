@@ -1,7 +1,7 @@
 enormously,tremendously,tremendously,correct
 provisions,stipulations,stipulations,correct
 haphazardly,randomly,randomly,correct
-prominent,conspicuous,ancient,wrong
+prominent,conspicuous,conspicuous,correct
 zenith,pinnacle,pinnacle,correct
 flawed,imperfect,imperfect,correct
 urgently,desperately,desperately,correct
@@ -16,9 +16,9 @@ fanciful,imaginative,imaginative,correct
 showed,demonstrated,demonstrated,correct
 constantly,continually,continually,correct
 issues,subjects,subjects,correct
-furnish,supply,advise,wrong
+furnish,supply,supply,correct
 costly,expensive,expensive,correct
-recognized,acknowledged,successful,wrong
+recognized,acknowledged,acknowledged,correct
 spot,location,location,correct
 make,earn,earn,correct
 often,frequently,frequently,correct
@@ -30,13 +30,13 @@ infinite,limitless,limitless,correct
 showy,striking,prickly,wrong
 levied,imposed,imposed,correct
 deftly,skillfully,skillfully,correct
-distribute,circulate,commercialize,wrong
+distribute,circulate,circulate,correct
 discrepancies,differences,differences,correct
 prolific,productive,productive,correct
 unmatched,unequaled,unequaled,correct
 peculiarly,uniquely,uniquely,correct
 hue,color,color,correct
-hind,rear,hairy,wrong
+hind,rear,curved,wrong
 highlight,accentuate,accentuate,correct
 hastily,hurriedly,hurriedly,correct
 temperate,mild,mild,correct
@@ -44,7 +44,7 @@ grin,smile,smile,correct
 verbally,orally,verbosely,guess
 physician,doctor,doctor,correct
 essentially,basically,basically,correct
-keen,sharp,useful,wrong
+keen,sharp,sharp,correct
 situated,positioned,positioned,correct
 principal,major,major,correct
 slowly,gradually,gradually,correct
@@ -69,8 +69,8 @@ resolved,settled,settled,correct
 feasible,possible,possible,correct
 expeditiously,rapidly,rapidly,correct
 percentage,proportion,proportion,correct
-terminated,ended,postponed,wrong
-uniform,alike,complex,wrong
+terminated,ended,ended,correct
+uniform,alike,hard,wrong
 figure,solve,list,wrong
 sufficient,enough,enough,correct
 fashion,manner,manner,correct

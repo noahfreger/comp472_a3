@@ -46,7 +46,7 @@ def synonym_test_dataset(model, file_name):
     return results
 
 
-def analysis(results, model_name=None):
+def analysis(results, model_name):
     # create csv file
     f = open('analysis.csv', 'a')
     # create the csv writer
@@ -56,9 +56,9 @@ def analysis(results, model_name=None):
     guess_count = len(question_list) - \
         np.count_nonzero(results[:, 3] == 'guess')
     # api info
-    number_of_unique_words = 'unknown'
-    if model_name:
-        number_of_unique_words = api.info(model_name)['num_records']
+
+    number_of_unique_words = api.info(model_name)['num_records']
+
     try:
         accuracy = correct_count / guess_count
     except:
@@ -87,14 +87,14 @@ analysis(results, model_name)
 
 # model 1
 
-model_name = 'glove-wiki-gigaword-100'
+model_name = 'glove-wiki-gigaword-300'
 model = api.load(model_name)
 results = synonym_test_dataset(model, model_name)
 analysis(results, model_name)
 
 # model 2
 
-model_name = 'glove-twitter-100'
+model_name = 'fasttext-wiki-news-subwords-300'
 model = api.load(model_name)
 results = synonym_test_dataset(model, model_name)
 analysis(results, model_name)
@@ -108,10 +108,9 @@ analysis(results, model_name)
 
 # model 4
 
-model_name = 'fasttext-wiki-news-subwords-300'
+model_name = 'glove-twitter-100'
 model = api.load(model_name)
 results = synonym_test_dataset(model, model_name)
 analysis(results, model_name)
-
 
 ###################################################################################
