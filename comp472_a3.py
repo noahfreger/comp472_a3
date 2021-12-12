@@ -1,8 +1,6 @@
 import sys
 import pandas as pd
 import gensim.downloader as api
-from gensim.models import KeyedVectors
-from gensim import models
 import csv
 import numpy as np
 
@@ -15,6 +13,7 @@ for i in range(4):
     word_list.append(df[str(i)].values.tolist())
 
 
+# Compares the simularity using the provided model
 def synonym_test_dataset(model, file_name):
     f = open(file_name + '-details.csv', 'w')
     results = []
@@ -53,20 +52,20 @@ def analysis(results, model_name):
     results = np.array(results)
     correct_count = np.count_nonzero(results[:, 3] == 'correct')
     # (80 - number of guesses)
-    guess_count = len(question_list) - \
+    non_guess_count = len(question_list) - \
         np.count_nonzero(results[:, 3] == 'guess')
     # api info
 
     number_of_unique_words = api.info(model_name)['num_records']
 
     try:
-        accuracy = correct_count / guess_count
+        accuracy = correct_count / non_guess_count
     except:
         accuracy = 'invalid'
 
     writer = csv.writer(f)
     writer.writerow([model_name, number_of_unique_words,
-                     correct_count, guess_count, accuracy])
+                     correct_count, non_guess_count, accuracy])
     f.close()
 
 ###################################################################################
