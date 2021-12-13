@@ -1,5 +1,7 @@
 # comp472_a3
 
+https://github.com/noahfreger/comp472_a3
+
 ## Requirements
 Make sure you have Python >= 3.8 installed
 
