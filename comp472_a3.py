@@ -14,7 +14,7 @@ for i in range(4):
     word_list.append(df[str(i)].values.tolist())
 
 
-# Compares the simularity using the provided model
+# Compares the similarity using the provided model
 def synonym_test_dataset(model, file_name):
     f = open(file_name + '-details.csv', 'w')
     results = []
